@@ -31,7 +31,7 @@ def loadlabel(filename):
 def splitfile(filename1,filename2):
 	fn1=readMat(filename1)
 	fn2=loadlabel(filename2)
-	for n in xrange(26):
+	for n in xrange(26):    ###26-labels(for example: 1 2 3 4 1 2 3    sum:7)
 		tempfile=[]		
 		number=0
 		for i in xrange(len(fn2)-1):
